@@ -23,8 +23,6 @@ Clean project structure
 JWT dependencies (ready for implementation)
 
 
-📁 Project Structure
-
 📁 **Project Structure**
 
 ```
