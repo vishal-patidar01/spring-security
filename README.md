@@ -26,9 +26,13 @@ JWT dependencies (ready for implementation)
 📁 Project Structure
 
 spring-security/
+
  ├── src/main/java/com/vishal/SecurityApp/SecurityApplication
+ 
  │     ├── advice/
+ 
  │     │     ├── ApiError.java
+ 
  │     │     └── GlobalExceptionHandler.java
  │     ├── config/
  │     │     └── WebSecurityConfig.java
