@@ -28,14 +28,14 @@ JWT dependencies (ready for implementation)
 spring-security/
 
  ├── src/main/java/com/vishal/SecurityApp/SecurityApplication
- |
- │     ├── advice/
- |     |
- │     │     ├── ApiError.java
- |     |
- │     │     └── GlobalExceptionHandler.java
- │     ├── config/
- │     │     └── WebSecurityConfig.java
+ 
+ │        ├── advice/
+      
+ │        │     ├── ApiError.java
+     
+ │        │     └── GlobalExceptionHandler.java
+ │        ├── config/
+ │        │     └── WebSecurityConfig.java
  │     ├── controller/
  │     │     └── PostController.java
  │     ├── dto/
