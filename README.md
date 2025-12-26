@@ -1,7 +1,9 @@
 🚀 Spring Security – Complete Authentication & Authorization
 
 This project demonstrates a complete Spring Boot + Spring Security setup including:
+
 Role-based access control
+
 In-memory authentication
 UserDetailsService implementation
 BCrypt password encoding
@@ -11,3 +13,5 @@ DTO + Entity + Service + Repository pattern
 MySQL integration
 Clean project structure
 JWT dependencies (ready for implementation)
+
+
