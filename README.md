@@ -25,33 +25,46 @@ JWT dependencies (ready for implementation)
 
 📁 Project Structure
 
-spring-security/
+📁 **Project Structure**
 
- ├── src/main/java/com/vishal/SecurityApp/SecurityApplication
- 
- │        ├── advice/
-      
- │        │     ├── ApiError.java
-     
- │        │     └── GlobalExceptionHandler.java
- │        ├── config/
- │        │     └── WebSecurityConfig.java
- │     ├── controller/
- │     │     └── PostController.java
- │     ├── dto/
- │     │     └── PostDto.java
- │     ├── entities/
- │     │     ├── PostEntity.java
- │     │     └── User.java
- │     ├── exceptions/
- │     │     └── ResourceNotFoundException.java
- │     ├── repositories/
- │     │     ├── PostRepository.java
- │     │     └── UserRepository.java
- │     └── services/
- │           ├── UserService.java
- │           ├── PostService.java
- │           └── PostServiceImpl.java
- ├── src/main/resources/
- │     └── application.properties
+```
+spring-security/
+│
+├── src/main/java/com/vishal/SecurityApp/SecurityApplication
+│   ├── advice/
+│   │   ├── ApiError.java
+│   │   └── GlobalExceptionHandler.java
+│   │
+│   ├── config/
+│   │   └── WebSecurityConfig.java
+│   │
+│   ├── controller/
+│   │   └── PostController.java
+│   │
+│   ├── dto/
+│   │   └── PostDto.java
+│   │
+│   ├── entities/
+│   │   ├── PostEntity.java
+│   │   └── User.java
+│   │
+│   ├── exceptions/
+│   │   └── ResourceNotFoundException.java
+│   │
+│   ├── repositories/
+│   │   ├── PostRepository.java
+│   │   └── UserRepository.java
+│   │
+│   ├── services/
+│   │   ├── UserService.java
+│   │   └── PostServiceImpl.java
+│   │
+│   └── SecurityApplication.java
+│
+├── src/main/resources/
+│   └── application.properties
+│
+└── pom.xml
+```
+
  └── pom.xml
