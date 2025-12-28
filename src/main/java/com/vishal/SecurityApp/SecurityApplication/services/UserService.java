@@ -8,6 +8,7 @@ import com.vishal.SecurityApp.SecurityApplication.exceptions.ResourceNotFoundExc
 import com.vishal.SecurityApp.SecurityApplication.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.boot.webmvc.autoconfigure.WebMvcProperties;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -32,6 +33,13 @@ public class UserService implements UserDetailsService{
         return userRepository.findByEmail(username)
                 .orElseThrow(() -> new ResourceNotFoundException("user with email "+ username +" not found"));
     }
+
+
+    public User getUserById(Long userId) {
+        return userRepository.findById(userId).orElseThrow(()->
+                new ResourceNotFoundException("user with id "+ userId +" not found"));
+    }
+
 
     public UserDto signup(SignUpDto signUpDto) {
         Optional<User> user = userRepository.findByEmail(signUpDto.getEmail());
